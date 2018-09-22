@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <head>
+        <meta charset=utf-8>
+        <meta http-equiv=x-ua-compatible content="ie=edge">
+        <meta name=keywords content=jikegou,电商>
+        <meta name=description content=jikegou电商平台个人项目>
+        <link rel=dns-prefetch href=//cdn.bootcss.com>
+        <link rel=dns-prefetch href=//s.verynavi.com>
+        <title>极客购</title>
+        <link rel="shortcut icon" href="//s.verynavi.com/mmall-fe/dist/favicon.ico">
+        <link href="//s.verynavi.com/mmall-fe/dist/css/common.css?4b5bcd0f83dc52dbb6b5" rel="stylesheet">
+        <link href="//s.verynavi.com/mmall-fe/dist/css/about.css?4b5bcd0f83dc52dbb6b5" rel="stylesheet">
+    </head>
+</head>
+<body>
+<div class=nav>
+    <div class=w>
+        <div class=user-info><span class="user not-login"> <span class="link js-login">登录</span> <span
+                class="link js-register">注册</span> </span> <span class="user login"> <span class=link-text> 欢迎, <span
+                class=username></span> </span> <span class="link js-logout">退出</span> </span></div>
+        <ul class=nav-list>
+            <li class=nav-item><a class=link href=./cart.html> <i class="fa fa-shopping-cart"></i> 购物车(<span
+                    class=cart-count>0</span>) </a></li>
+            <li class=nav-item><a class=link href=./order-list.html>我的订单</a></li>
+            <li class=nav-item><a class=link href=./user-center.html>个人中心</a></li>
+            <li class=nav-item><a class=link href=./project.html target=_blank>关于项目</a></li>
+        </ul>
+    </div>
+</div>
+
+<div style="text-align: center;">
+    <h1 style="text-align: center;">题目：基于JavaWeb的大型分布式集群电商系统平台的设计与开发</h1>
+    <h2><a href="http://www.verynavi.com/index.jsp">集群测试,进入后不断刷新页面</a></h2>
+    <textarea style="width: 1000px;height: 736px;">
+课题需求：本课题需要学生自行设计一个高并发，高性能，高可用的互联网在线电商系统，使用主流的SSM框架以及前后端分离的开发模式，设计并完善多种企业级架构解决方案，如在线支付解决方案，搜索解决方案，负载均衡解决方案，自动化发布解决方案，Tomcat集群与Redis分布式解决方案等等。使用Git进行版本管理，要求最终将项目部署在阿里云服务器上并提供公网访问。
+
+项目简介：用户模块，分类模块，购物车模块，商品模块，订单模块，收货地址模块，支付模块
+
+前后端分离-前端
+前端Webpack打包，拥有独立的前台页面和后台管理系统，采用分层架构模块化，在实现项目功能的同时注重高内聚，低耦合的思想，利于系统的维护和升级。采用Shell脚本自动从GitHub上获取最新项目代码并发布至服务器。
+
+前后端分离-后端
+后端由Maven管理依赖并构建项目，采用Shell脚本自动从GitHub上获取最新项目代码并发布至服务器。
+用户模块采用高复用服务响应对象的设计思想和封装，解决了横向越权和纵向越权的问题，采用MD5明文加密，Guava缓存。
+分类模块运用递归算法，对复杂对象进行排重，采用无限层级树结构设计。
+购物车模块对商品总价计算复用封装，BigDecimal解决商业运算丢失精度的坑。
+商品模块抽象出POJO，BO，VO模型，并实现了高效分页及动态排序，与FTP服务器对接，可以进行SpringMVC文件上传和富文本文件上传。
+订单模块完成了安全漏洞的解决方案，完善订单号的生成规则，以及强大封装的常量和枚举设计。
+收货地址模块可以同步获取自增主键，进行数据绑定和对象绑定，对越权问题进行了升级巩固。
+支付模块对接蚂蚁金服支付宝开发者沙箱环境，生成二维码，扫码支付，完成真实的支付功能。
+架构方面：搭建Tomcat集群和Redis分布式，并利用Nginx进行负载均衡，实现了单点登录功能，定时关单功能，并封装了大量工具类。
+
+环境参数
+项目采用Git进行版本控制，前端采用Webpack打包，后端采用Maven进行依赖管理和项目构建，服务端采用Shell脚本进行自动化发布。
+
+前端：
+开发平台：Windows 10
+部署平台：CentOS 7 64位
+模块化方案：CommonJS+Webpack
+开发工具：Webstorm 2018.1.5
+项目发布方式：Shell脚本自动化发布
+技术栈：HTML5，CSS3，JavaScript，Jquery，React+Sass...
+版本控制：Git
+
+后端：
+开发平台：Windows 10
+部署平台：CentOS7 64位
+MySQL版本：mysql-server-5.1.173
+Vsftpd版本：vsftpd2.2.2
+JDK版本：JDK1.8.0_171
+Maven版本：Maven-3.5.4
+Nginx版本：nginx-1.10.2
+开发工具：Intellj IDEA 2017.3.5 64位
+技术栈：Spring，SpringMVC，Mybatis，Guava，Jackson，Joda，注解开发
+版本控制：Git</textarea>
+</div>
+<div class=footer>
+    <div class=w>
+        <div class=links><a class=link href=https://www.jikewenku.com/ target=_blank> 极客文库</a> | <a class=link
+                                                                                                    href=http://www.geekerstar.com/ target=_blank>
+            极客之星</a> | <a class=link href=https://github.com/geekerstar target=_blank> 我的GitHub</a> | <a class=link
+                                                                                                         href=https://blog.csdn.net/geekerstar/ target=_blank>
+            CSDN</a>
+            <div class=copyright> COPYRIGHT 2018 Geekerstar. ALL RIGHTS RESERVED. 毕设项目 蜀ICP备15019641号-2</div>
+        </div>
+    </div>
+</div>
+<script src=https://cdn.bootcss.com/jquery/1.11.3/jquery.min.js></script>
+<script type="text/javascript" src="//s.verynavi.com/mmall-fe/dist/js/base.js?4b5bcd0f83dc52dbb6b5"></script>
+<script type="text/javascript" src="//s.verynavi.com/mmall-fe/dist/js/about.js?4b5bcd0f83dc52dbb6b5"></script>
+</body>
+</html>

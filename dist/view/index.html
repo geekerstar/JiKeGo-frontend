@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset=utf-8>
+    <meta http-equiv=x-ua-compatible content="ie=edge">
+    <meta name=keywords content=jikegou,电商>
+    <meta name=description content=jikegou电商平台个人项目>
+    <link rel=dns-prefetch href=//cdn.bootcss.com>
+    <link rel=dns-prefetch href=//s.verynavi.com>
+    <title>首页 - 极客购</title>
+    <link rel="shortcut icon" href="//s.verynavi.com/mmall-fe/dist/favicon.ico">
+    <link href="//s.verynavi.com/mmall-fe/dist/css/common.css?4b5bcd0f83dc52dbb6b5" rel="stylesheet">
+    <link href="//s.verynavi.com/mmall-fe/dist/css/index.css?4b5bcd0f83dc52dbb6b5" rel="stylesheet">
+</head>
+<body>
+<div class=nav>
+    <div class=w>
+        <div class=user-info><span class="user not-login"> <span class="link js-login">登录</span> <span
+                class="link js-register">注册</span> </span> <span class="user login"> <span class=link-text> 欢迎, <span
+                class=username></span> </span> <span class="link js-logout">退出</span> </span></div>
+        <ul class=nav-list>
+            <li class=nav-item><a class=link href=./cart.html> <i class="fa fa-shopping-cart"></i> 购物车(<span
+                    class=cart-count>0</span>) </a></li>
+            <li class=nav-item><a class=link href=./order-list.html>我的订单</a></li>
+            <li class=nav-item><a class=link href=./user-center.html>个人中心</a></li>
+            <li class=nav-item><a class=link href=./project.html target=_blank>关于项目</a></li>
+        </ul>
+    </div>
+</div>
+<div class=header>
+    <div class=w><a class=logo href=./index.html>极客购</a>
+        <div class=search-con><input class=search-input id=search-input placeholder=请输入商品名称/>
+            <button class="btn search-btn" id=search-btn>搜索</button>
+        </div>
+    </div>
+</div>
+<div class="w">
+    <ul class="keywords-list">
+        <li class="keywords-item">
+            <a class="link" target="_blank" href="./list.html?keyword=手机">手机</a>
+            <a class="link" target="_blank" href="./list.html?keyword=数码">耳机</a>
+        </li>
+        <li class="keywords-item">
+            <a class="link" target="_blank" href="./list.html?keyword=电脑">电脑</a>
+            <a class="link" target="_blank" href="./list.html?keyword=办公">办公</a>
+        </li>
+        <li class="keywords-item">
+            <a class="link" target="_blank" href="./list.html?keyword=电视">电视</a>
+            <a class="link" target="_blank" href="./list.html?keyword=空调">空调</a>
+            <a class="link" target="_blank" href="./list.html?keyword=冰箱">冰箱</a>
+            <a class="link" target="_blank" href="./list.html?keyword=洗衣机">洗衣机</a>
+        </li>
+        <li class="keywords-item">
+            <a class="link" target="_blank" href="./list.html?keyword=女装">女装</a>
+            <a class="link" target="_blank" href="./list.html?keyword=帽子">帽子</a>
+        </li>
+        <li class="keywords-item">
+            <a class="link" target="_blank" href="./list.html?keyword=打印机">打印机</a>
+            <a class="link" target="_blank" href="./list.html?keyword=投影仪">投影仪</a>
+            <a class="link" target="_blank" href="./list.html?keyword=文具">文具</a>
+        </li>
+        <li class="keywords-item">
+            <a class="link" target="_blank" href="./list.html?keyword=计算机书籍">计算机书籍</a>
+            <a class="link" target="_blank" href="./list.html?keyword=工具书">工具书</a>
+        </li>
+        <li class="keywords-item">
+            <a class="link" target="_blank" href="./list.html?keyword=赛车竞速">赛车竞速</a>
+            <a class="link" target="_blank" href="./list.html?keyword=角色扮演">角色扮演</a>
+            <a class="link" target="_blank" href="./list.html?keyword=网络游戏">网络游戏</a>
+        </li>
+        <li class="keywords-item">
+            <a class="link" target="_blank" href="./list.html?keyword=沙盒">沙盒</a>
+            <a class="link" target="_blank" href="./list.html?keyword=休闲">休闲</a>
+            <a class="link" target="_blank" href="./list.html?keyword=射击">射击</a>
+        </li>
+        <li class="keywords-item">
+            <a class="link" target="_blank" href="./list.html?keyword=MacBook">MacBook</a>
+            <a class="link" target="_blank" href="./list.html?keyword=箱iPhone">iPhone</a>
+            <a class="link" target="_blank" href="./list.html?keyword=iPad">iPad</a>
+        </li>
+        <li class="keywords-item">
+            <a class="link" target="_blank" href="./list.html?keyword=小米">小米</a>
+            <a class="link" target="_blank" href="./list.html?keyword=罗技">罗技</a>
+            <a class="link" target="_blank" href="./list.html?keyword=苹果">苹果</a>
+        </li>
+    </ul>
+    <div class="banner-con">
+        <div class="loading"></div>
+    </div>
+</div>
+<div class="w">
+    <div class="floor-wrap">
+        <h1 class="floor-title">数码设备</h1>
+        <ul class="floor-list">
+            <li class="floor-item">
+                <a href="./list.html?categoryId=100006">
+                    <span class="floor-text">鼠标</span>
+                    <img class="floor-img"
+                         src="http://s.verynavi.com/mmall-fe/dist/resource/pics/sb.png"
+                         alt="鼠标"/>
+                </a>
+            </li>
+            <li class="floor-item">
+                <a href="./list.html?categoryId=100007">
+                    <span class="floor-text">键盘</span>
+                    <img class="floor-img"
+                         src="http://s.verynavi.com/mmall-fe/dist/resource/pics/jp.png"
+                         alt="键盘"/>
+                </a>
+            </li>
+            <li class="floor-item">
+                <a href="./list.html?categoryId=100008">
+                    <span class="floor-text">显示器</span>
+                    <img class="floor-img"
+                         src="http://s.verynavi.com/mmall-fe/dist/resource/pics/xsq.png"
+                         alt="显示器"/>
+                </a>
+            </li>
+            <li class="floor-item">
+                <a href="./list.html?categoryId=100009">
+                    <span class="floor-text">耳机</span>
+                    <img class="floor-img"
+                         src="http://s.verynavi.com/mmall-fe/dist/resource/pics/ej.png"
+                         alt="耳机"/>
+                </a>
+            </li>
+            <li class="floor-item">
+                <a href="./list.html?categoryId=100035">
+                    <span class="floor-text">笔记本</span>
+                    <img class="floor-img"
+                         src="http://s.verynavi.com/mmall-fe/dist/resource/pics/bjb.png"
+                         alt="笔记本"/>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="floor-wrap">
+        <h1 class="floor-title">家用电器</h1>
+        <ul class="floor-list">
+            <li class="floor-item">
+                <a href="./list.html?categoryId=100011">
+                    <span class="floor-text">音响</span>
+                    <img class="floor-img"
+                         src="http://s.verynavi.com/mmall-fe/dist/resource/pics/yx.png"
+                         alt="音响"/>
+                </a>
+            </li>
+            <li class="floor-item">
+                <a href="./list.html?categoryId=100012">
+                    <span class="floor-text">电视</span>
+                    <img class="floor-img"
+                         src="http://s.verynavi.com/mmall-fe/dist/resource/pics/ds.png"
+                         alt="电视"/>
+                </a>
+            </li>
+            <li class="floor-item">
+                <a href="./list.html?categoryId=100013">
+                    <span class="floor-text">冰箱</span>
+                    <img class="floor-img"
+                         src="http://s.verynavi.com/mmall-fe/dist/resource/pics/bx.png"
+                         alt="冰箱"/>
+                </a>
+            </li>
+            <li class="floor-item">
+                <a href="./list.html?categoryId=100014">
+                    <span class="floor-text">洗衣机</span>
+                    <img class="floor-img"
+                         src="http://s.verynavi.com/mmall-fe/dist/resource/pics/xyj.png"
+                         alt="洗衣机"/>
+                </a>
+            </li>
+            <li class="floor-item">
+                <a href="./list.html?categoryId=100015">
+                    <span class="floor-text">空调</span>
+                    <img class="floor-img"
+                         src="http://s.verynavi.com/mmall-fe/dist/resource/pics/kt.png"
+                         alt="空调"/>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="floor-wrap">
+        <h1 class="floor-title">服装箱包</h1>
+        <ul class="floor-list">
+            <li class="floor-item">
+                <a href="./list.html?categoryId=100016">
+                    <span class="floor-text">女装</span>
+                    <img class="floor-img"
+                         src="http://s.verynavi.com/mmall-fe/dist/resource/pics/vz.png"
+                         alt="女装"/>
+                </a>
+            </li>
+            <li class="floor-item">
+                <a href="./list.html?categoryId=100017">
+                    <span class="floor-text">帽子</span>
+                    <img class="floor-img"
+                         src="http://s.verynavi.com/mmall-fe/dist/resource/pics/mz.png"
+                         alt="帽子"/>
+                </a>
+            </li>
+            <li class="floor-item">
+                <a href="./list.html?categoryId=100018">
+                    <span class="floor-text">旅行箱</span>
+                    <img class="floor-img"
+                         src="http://s.verynavi.com/mmall-fe/dist/resource/pics/xlx.png"
+                         alt="旅行箱"/>
+                </a>
+            </li>
+            <li class="floor-item">
+                <a href="./list.html?categoryId=100019">
+                    <span class="floor-text">手提包</span>
+                    <img class="floor-img"
+                         src="http://s.verynavi.com/mmall-fe/dist/resource/pics/stb.png"
+                         alt="手提包"/>
+                </a>
+            </li>
+            <li class="floor-item">
+                <a href="./list.html?categoryId=100020">
+                    <span class="floor-text">男装</span>
+                    <img class="floor-img"
+                         src="http://s.verynavi.com/mmall-fe/dist/resource/pics/nz.png"
+                         alt="男装"/>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="floor-wrap">
+        <h1 class="floor-title">书籍影音</h1>
+        <ul class="floor-list">
+            <li class="floor-item">
+                <a href="./list.html?categoryId=100026">
+                    <span class="floor-text">计算机</span>
+                    <img class="floor-img"
+                         src="http://s.verynavi.com/mmall-fe/dist/resource/pics/jsj.png"
+                         alt="计算机"/>
+                </a>
+            </li>
+            <li class="floor-item">
+                <a href="./list.html?categoryId=100027">
+                    <span class="floor-text">小说</span>
+                    <img class="floor-img"
+                         src="http://s.verynavi.com/mmall-fe/dist/resource/pics/xs.png"
+                         alt="小说"/>
+                </a>
+            </li>
+            <li class="floor-item">
+                <a href="./list.html?categoryId=100028">
+                    <span class="floor-text">工具书</span>
+                    <img class="floor-img"
+                         src="http://s.verynavi.com/mmall-fe/dist/resource/pics/gjs.png"
+                         alt="工具书"/>
+                </a>
+            </li>
+            <li class="floor-item">
+                <a href="./list.html?categoryId=100029">
+                    <span class="floor-text">文学</span>
+                    <img class="floor-img"
+                         src="http://s.verynavi.com/mmall-fe/dist/resource/pics/wx.png"
+                         alt="文学"/>
+                </a>
+            </li>
+            <li class="floor-item">
+                <a href="./list.html?categoryId=100030">
+                    <span class="floor-text">杂志</span>
+                    <img class="floor-img"
+                         src="http://s.verynavi.com/mmall-fe/dist/resource/pics/zz.png"
+                         alt="杂志"/>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="floor-wrap">
+        <h1 class="floor-title">电子游戏</h1>
+        <ul class="floor-list">
+            <li class="floor-item">
+                <a href="./list.html?categoryId=100032">
+                    <span class="floor-text">赛车竞速</span>
+                    <img class="floor-img"
+                         src="http://s.verynavi.com/mmall-fe/dist/resource/pics/jsyx.png"
+                         alt="赛车竞速"/>
+                </a>
+            </li>
+            <li class="floor-item">
+                <a href="./list.html?categoryId=100033">
+                    <span class="floor-text">角色扮演</span>
+                    <img class="floor-img"
+                         src="http://s.verynavi.com/mmall-fe/dist/resource/pics/jsby.png"
+                         alt="角色扮演"/>
+                </a>
+            </li>
+            <li class="floor-item">
+                <a href="./list.html?categoryId=100034">
+                    <span class="floor-text">网络游戏</span>
+                    <img class="floor-img"
+                         src="http://s.verynavi.com/mmall-fe/dist/resource/pics/wlyx.png"
+                         alt="网络游戏"/>
+                </a>
+            </li>
+            <li class="floor-item">
+                <a href="./list.html?categoryId=100040">
+                    <span class="floor-text">沙盒游戏</span>
+                    <img class="floor-img"  src="http://s.verynavi.com/mmall-fe/dist/resource/pics/shyx.png" alt="沙盒游戏"/>
+                </a>
+            </li>
+            <li class="floor-item">
+                <a href="./list.html?categoryId=100041">
+                    <span class="floor-text">休闲游戏</span>
+                    <img class="floor-img"
+                         src="http://s.verynavi.com/mmall-fe/dist/resource/pics/xxyx.png"
+                         alt="休闲游戏"/>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class=footer>
+    <div class=w>
+        <div class=links><a class=link href=https://www.jikewenku.com/ target=_blank> 极客文库</a> | <a class=link
+                                                                                                    href=http://www.geekerstar.com/ target=_blank>
+            极客之星</a> | <a class=link href=https://github.com/geekerstar target=_blank> 我的GitHub</a> | <a class=link
+                                                                                                         href=https://blog.csdn.net/geekerstar/ target=_blank>
+            CSDN</a>
+            <div class=copyright> COPYRIGHT 2018 Geekerstar. ALL RIGHTS RESERVED. 毕设项目 蜀ICP备15019641号-2</div>
+        </div>
+    </div>
+</div>
+<script src=https://cdn.bootcss.com/jquery/1.11.3/jquery.min.js></script>
+<script type="text/javascript" src="//s.verynavi.com/mmall-fe/dist/js/base.js?4b5bcd0f83dc52dbb6b5"></script>
+<script type="text/javascript" src="//s.verynavi.com/mmall-fe/dist/js/index.js?4b5bcd0f83dc52dbb6b5"></script>
+</body>
+</html>
