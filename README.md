@@ -3,6 +3,7 @@
 预览：http://www.verynavi.com
 
 ## 截图
+![pics](https://github.com/geekerstar/JiKeGo-frontend/blob/master/pics/14.jpg)
 ![pics](https://github.com/geekerstar/JiKeGo-frontend/blob/master/pics/1.jpg)
 ![pics](https://github.com/geekerstar/JiKeGo-frontend/blob/master/pics/2.jpg)
 ![pics](https://github.com/geekerstar/JiKeGo-frontend/blob/master/pics/3.jpg)
